@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-SRCDIR=https://raw.githubusercontent.com/Evelynchengusa/CMPS12B-M-gradingScript/master/pa1/
+SRCDIR=https://raw.githubusercontent.com/ajzbc/CMPS12B-M-gradingScript/master/pa1/
 
 NUMTESTS=8
 PNTSPERTEST=5
@@ -95,7 +95,7 @@ make -f Makefile1 ModelSubsetTest
 timeout 5 ./ModelSubsetTest -v > SubsetTest-out.txt &>> SubsetTest-out.txt
 cat SubsetTest-out.txt
 
-rm -f *out[0-9].txt
+# rm -f *out[0-9].txt
 
 rm -f *.o garbage*
 #ModelSubsetTest*
